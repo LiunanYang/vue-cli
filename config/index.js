@@ -11,23 +11,30 @@ module.exports = {
   dev: {
 
     // Paths
+    // 静态资源文件夹 默认 "static"
     assetsSubDirectory: 'static',
+    // 发布路径
     assetsPublicPath: '/',
+    // 配置代理API
     proxyTable: {},
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
     // 下面是 dev-server 的端口号，可以自行更改
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
-    // 表示是否自动代开浏览器
+    // 表示是否自动打开浏览器
     autoOpenBrowser: true,
+    // 查询错误
     errorOverlay: true,
+    // 通知错误
     notifyOnErrors: true,
+    // poll 是跟 devserver 相关的一个配置，webpack 为我们提供的 devserver 是可以监控文件改动的，但在有的情况下却不能工作，我们可以设置一个轮询(poll)来解决
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
     // Use Eslint Loader?
     // If true, your code will be linted during bundling and
     // linting errors and warnings will be shown in the console.
+    // 是否使用 eslint
     useEslint: true,
     // If true, eslint errors and warnings will also be shown in the error overlay
     // in the browser.
